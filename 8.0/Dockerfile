@@ -13,4 +13,4 @@ RUN curl -fsSL "$TOMCAT_TGZ_URL" |tar zx --strip-components=1
 RUN rm bin/*.bat
 
 EXPOSE 8080
-CMD ["$CATALINA_HOME/bin/catalina.sh", "run"]
+CMD ["catalina.sh", "run"]
